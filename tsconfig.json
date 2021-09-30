@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noEmit": false,
