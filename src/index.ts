@@ -1,11 +1,12 @@
 import express, { Request, Response } from 'express';
 import { URLController } from './controller/URLController';
-
+import { MongoConnection } from './database/MongoConnection';
 
 const api = express();
-
 api.use(express.json());
 
+const database = new MongoConnection();
+database.connect();
 
 api.get('/status', (req: Request, res: Response) => {
   res.json({ success: true });
